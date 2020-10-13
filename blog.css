@@ -1,0 +1,213 @@
+/*
+ * Globals
+ */
+
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(10, 10, 10);
+    background-color: #e9e9e9;
+  }
+  
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    margin-top: 0;
+    font-weight: normal;
+    color: #333;
+  }
+
+  a:hover {
+    color: #75001f;
+  }
+
+/*
+ * Main page content wrap
+ */
+  #wrap {
+    width: 1280px;
+    max-width: 100%;
+    margin:0 auto;
+    background-color: #fff;
+  }
+  
+/*
+ * Override Bootstrap's default container.
+ */
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  
+/*
+ * Masthead for nav
+ */
+  
+  .blog-masthead {
+    background-color: #E09D9D;
+    padding: 10px;
+    -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+            box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+  }
+  
+  /* Nav links */
+  
+  .blog-nav-item {
+    position: relative;
+    padding: 10px;
+    font-weight: 500;
+    color: #cdddeb;
+  }
+
+  #mobile-menu-button {
+    margin-left: 40%;
+    margin-right: 40%;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  }
+  
+  /* Active state gets a caret at the bottom */
+
+  
+  .blog-nav li {
+    font-family: "Cousine";
+    position: relative;
+    padding: 10px;
+    display: block;
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .blog-nav li {
+      display: inline-block;
+      width: auto;
+    }
+  }
+
+    .blog-nav li a {
+      color: #fff;
+    }
+    
+    .blog-nav li a::after {
+      content: '';
+      width: 0px;
+      height: 2px;
+      display: block;
+      background: #75001f;
+      transition: 200ms;
+    }
+
+    .blog-nav li a:hover {
+      color: #75001f;
+      text-decoration: none;
+    }
+
+    .blog-nav li a:hover::after {
+      width: 100%;
+    }
+  
+  
+/*
+ * Blog name and description
+ */
+  
+  .blog-header .banner {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-height: 200px;
+    background-image: url("header-bg.PNG");
+  }
+  .blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: normal;
+  }
+  .blog-description {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  
+/*
+ * Main column and sidebar layout
+ */
+  
+  .page-header-title {
+    font-family: 'Cousine', monospace;
+    padding: 10px 10px 20px 10px;
+    font-weight: 600;
+  }
+
+  .page-header-title a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .page-header-title a:hover {
+    text-decoration: underline;
+  }
+
+  #main {
+    padding-top: 50px;
+  }
+  
+  /* Sidebar modules for boxing content */
+    .sidebar-module {
+      padding: 15px;
+      margin: 0 -15px 15px;
+    }
+    .sidebar-module-inset {
+      padding: 15px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+    }
+    .sidebar-module-inset p:last-child,
+    .sidebar-module-inset ul:last-child,
+    .sidebar-module-inset ol:last-child {
+      margin-bottom: 0;
+    }
+  
+  
+  /* Pagination */
+    .pager {
+      margin-bottom: 60px;
+      text-align: left;
+    }
+    .pager > li > a {
+      width: 140px;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 30px;
+    }
+    
+/*
+ * Footer
+ */
+  
+  .blog-footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+  }
+  .blog-footer p:last-child {
+    margin-bottom: 0;
+  }
